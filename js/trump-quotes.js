@@ -18,7 +18,19 @@ var quotes = [
 	"I think that putting a wife to work is a very dangerous thing.",
 	"26,000 unreported sexual assults in the military-only 238 convictions. What did these geniuses expect when they put men & women together?",
 	"If Hilary Clinton can't satisfy her husband what makes her think she can satisfy America?",
-	"And when you’re a star, they let you do it. You can do anything. Grab them by the pussy. You can do anything."
+	"And when you’re a star, they let you do it. You can do anything. Grab them by the pussy. You can do anything.",
+	"Do you believe it? The Obama Administration agreed to take thousands of illegal immigrants from Australia. Why? I will study this dumb deal!",
+	"If the ban were announced with a one week notice, the 'bad' would rush into our country during that week. A lot of bad 'dudes' out there",
+	"Congressman John Lewis should spend more time on fixing and helping his district, which is in horrible shape and falling apart (not to mention crime infested) rather than falsely complaining about the election results. All talk, talk, talk - no action or results. Sad!",
+	"I win an election easily, a great 'movement' is verified, and crooked opponents try to belittle our victory with FAKE NEWS. A sorry state!",
+	"Wow, the ratings are in and Arnold Schwarzenegger got 'swamped' (or destroyed) by comparison to the ratings machine, DJT. So much for being a movie star... But who cares, he supported Kasich and Hillary",
+	"The dishonest media likes saying that I am in Agreement with Julian Assange - wrong. I simply state what he says, it is for the people to make up their own minds as to the truth...",
+	"I would have done even better in the election if that is possible, if the winner was based on popular vote - but would campaign differently",
+	"I have NOTHING to do with The Apprentice except for the fact that I conceived it with Mark B & have a big stake in it...",
+	"I watched parts of @nbcsnl Saturday Night Live last night. It is a totally one-sided, biased show - nothing funny at all. Equal time for us?",
+	"In addition to winning the Electoral College in a landslide, I won the popular vote if you deduct the millions of people who voted illegally",
+	"The Theater must always be a safe and special place. The cast of Hamilton was very rude last night to a very good man, Mike Pence. Apologize!",
+	"Yes, Arnold Schwarzenegger did a really bad job as Governor of California and even worse on the Apprentice... but at least he tried hard!"
 ];
 
 function newQuote() {
