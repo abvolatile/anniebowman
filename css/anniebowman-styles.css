@@ -51,6 +51,11 @@ p {
   line-height: 26px;
   margin-bottom: 32px; }
 
+a:focus {
+   color: #eee;
+   text-decoration: none;
+}
+
 .form-control {
   border-radius: 0;
   border: 1px solid #ccc;
@@ -466,6 +471,4 @@ footer {
 @media (min-width: 768px) {
   #home .text {
     top: 0; }
-  #main {
-     background-size: auto; }
 }
