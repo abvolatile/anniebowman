@@ -13,11 +13,16 @@ h1 {
 	background-image: url(https://www.minnpost.com/sites/default/files/imagecache/article_detail/images/articles/TrumpManchester640_1_0.jpg);
 	background-size: cover;
 	background-position: center center;
-	min-height: 350px;
+	min-height: 600px;
+	position: relative;
 }
 
 blockquote {
-	background-color: rgba(225,225,225,0.5);
+	background-color: rgba(225,225,225,0.7);
+	position: absolute;
+	bottom: 80px;
+	left: 50px;
+	right: 50px;
 }
 
 #quoteDisplay {
@@ -38,6 +43,9 @@ blockquote {
 	background-color: red;
 	color: #fff;
 	border: none;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
 }
 
 .btn:hover {
@@ -60,4 +68,74 @@ blockquote {
 #footer p {
 	padding-top: 10px;
 	color: grey;
+}
+
+/* ============== MEDIA QUERIES ================ */
+@media (max-width: 1199px) {
+	h1 {
+		font-size: 32px;
+	}
+
+	.jumbotron {
+		margin-top: 20px;
+		min-height: 500px;
+	}
+
+	blockquote {
+		margin-top: 20px;
+		bottom: 60px;
+	}
+
+	#quoteDisplay {
+		font-size: 26px;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+	h1 {
+		font-size: 28px;
+	}
+
+	.jumbotron {
+		margin-top: 10px;
+		min-height: 450px;
+	}
+
+	#quoteDisplay {
+		font-size: 20px;
+	}
+
+	.author {
+		font-size: 16px;
+	}
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media (max-width: 480px) {
+	h1 {
+		font-size: 22px; }
+
+	.jumbotron {
+		margin-top: 10px;
+		min-height: 350px;
+	}
+
+	blockquote {
+		margin: 20px auto;
+		position: static;
+	}
+
+	#quoteDisplay {
+		font-size: 18px;
+	}
+
+	.author {
+		font-size: 14px;
+	}
+
+	.btn, .btn:hover, .btn:focus {
+		bottom: 8px;
+		right: 15px;
+	}
 }
