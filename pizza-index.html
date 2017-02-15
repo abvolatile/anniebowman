@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Example online ordering system for hypothetical pizza place called 'Pie in the Sky': a drone-based pizza delivery company">
+   <meta name="author" content="Annie Bowman">
+   <link rel="shortcut icon" href="./images/pdicon.png">
+
+   <title>Pie in the Sky &#124; Online Ordering</title>
+
+   <!-- font -->
+   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Sigmar+One" rel="stylesheet">
+   <!-- fontawesome icons -->
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   <!-- bootstrap -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <!-- custom CSS -->
+   <link rel="stylesheet" href="./css/pizza-styles.css">
+</head>
+<body>
+
+   <header class="container">
+      <div class="row">
+         <div class="col-xs-12 text-center">
+            <h1>PIE IN THE SKY <span id="head2">Online Ordering</span></h1>
+            <h5 class="text-center">Get your pizza delivered by drone! &mdash; (206)305-2038</h5>
+         </div>
+      </div>
+   </header>
+
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12 col-md-8">
+            <h2 id="create">Create Your Pizza!</h2>
+         </div>
+      </div>
+   </div>
+
+   <div class="container">
+      <div class="row">
+         <main class="col-xs-12 col-sm-8">
+            <div class="row">
+               <h3 class="text-center">Personal &mdash; $6.00 &emsp; Medium &mdash; $10.00<br><br> Large &mdash; $14.00 &emsp; X-Large &mdash; $16.00</h3>
+               <p class="text-center baseP">Base prices include one meat, one veggie, regular cheese, choice of sauce and crust (additional charge for stuffed crust)</p>
+               <p class="text-center baseP">Each additional meat or veggie is $1.00 extra</p>
+               <div class="col-sm-12">
+                  <h3 class="choices">SIZE</h3>
+                  <div class="text-center">
+                     <label class="radio-inline">
+                        <input class="size" type="radio" name="inlineSizeOptions" value="Personal Pizza" checked> Personal: 8 inch
+                     </label>
+                     <label class="radio-inline">
+                        <input class="size" type="radio" name="inlineSizeOptions" value="Medium Pizza"> Medium: 12 inch
+                     </label>
+                     <label class="radio-inline">
+                        <input class="size" type="radio" name="inlineSizeOptions" value="Large Pizza"> Large: 14 inch
+                     </label>
+                     <label class="radio-inline">
+                        <input class="size" type="radio" name="inlineSizeOptions" value="X-Large Pizza"> X-Large: 16 inch
+                     </label>
+                  </div>
+                  <hr>
+               </div>
+               <div class="col-sm-12">
+                  <h3 class="choices">CRUST</h3>
+                  <div class="text-center">
+                     <label class="radio-inline">
+                        <input class="crust" type="radio" name="inlineCrustOptions" value="Plain Crust" checked> Plain
+                     </label>
+                     <label class="radio-inline">
+                        <input class="crust" type="radio" name="inlineCrustOptions" value="Garlic Crust"> Garlic Butter
+                     </label>
+                     <label class="radio-inline">
+                        <input class="crust" type="radio" name="inlineCrustOptions" value="Spicy Crust"> Spicy
+                     </label>
+                     <label class="radio-inline">
+                        <input class="crust" type="radio" name="inlineCrustOptions" value="House Crust"> House Special
+                     </label>
+                     <label class="radio-inline">
+                        <input class="crust" type="radio" name="inlineCrustOptions" value="Stuffed Crust"> Cheese Stuffed (+$3.00)
+                     </label>
+                  </div>
+                  <hr>
+               </div>
+               <div class="col-sm-12">
+                  <h3 class="choices">SAUCE</h3>
+                  <div class="text-center">
+                     <label class="radio-inline">
+                        <input class="sauce" type="radio" name="inlineSauceOptions" value="Marinara Sauce" checked> Traditional Marinara
+                     </label>
+                     <label class="radio-inline">
+                        <input class="sauce" type="radio" name="inlineSauceOptions" value="White Sauce"> White Sauce
+                     </label>
+                     <label class="radio-inline">
+                        <input class="sauce" type="radio" name="inlineSauceOptions" value="BBQ Sauce"> Barbeque Sauce
+                     </label>
+                     <label class="radio-inline">
+                        <input class="sauce" type="radio" name="inlineSauceOptions" value="No Sauce"> No Sauce
+                     </label>
+                  </div>
+                  <hr>
+               </div>
+               <div class="col-sm-12">
+                  <h3 class="choices">CHEESE</h3>
+                  <div class="text-center">
+                     <label class="radio-inline">
+                        <input class="cheese" type="radio" name="inlineCheeseOptions" value="Regular" checked> Regular
+                     </label>
+                     <label class="radio-inline">
+                        <input class="cheese" type="radio" name="inlineCheeseOptions" value="No Cheese"> No Cheese
+                     </label>
+                     <label class="radio-inline">
+                        <input class="cheese" type="radio" name="inlineCheeseOptions" value="Extra Cheese"> Extra Cheese (+$3.00)
+                     </label>
+                  </div>
+                  <hr>
+               </div>
+               <div class="col-sm-12">
+                  <h3 class="choices">MEATS</h3>
+                  <div class="text-center">
+                     <label class="checkbox-inline">
+                        <input class="meat" type="checkbox" value="Pepperoni"> Pepperoni
+                     </label>
+                     <label class="checkbox-inline">
+                        <input class="meat" type="checkbox" value="Sausage"> Sausage
+                     </label>
+                     <label class="checkbox-inline">
+                        <input class="meat" type="checkbox" value="Canadian Bacon"> Canadian Bacon
+                     </label>
+                     <label class="checkbox-inline">
+                        <input class="meat" type="checkbox" value="Ground Beef"> Ground Beef
+                     </label>
+                     <label class="checkbox-inline">
+                        <input class="meat" type="checkbox" value="Chicken"> Chicken
+                     </label>
+                     <label class="checkbox-inline">
+                        <input class="meat" type="checkbox" value="Anchovy"> Anchovy
+                     </label>
+                  </div>
+                  <hr>
+               </div>
+               <div class="col-sm-12">
+                  <h3 class="choices">VEGGIES</h3>
+                  <div class="text-center">
+                     <label class="checkbox-inline">
+                        <input class="veggie" type="checkbox" value="Tomatoes"> Tomatoes
+                     </label>
+                     <label class="checkbox-inline">
+                        <input class="veggie" type="checkbox" value="Onions"> Red Onions
+                     </label>
+                     <label class="checkbox-inline">
+                        <input class="veggie" type="checkbox" value="Olives"> Black Olives
+                     </label>
+                     <label class="checkbox-inline">
+                        <input class="veggie" type="checkbox" value="Green Peppers"> Green Peppers
+                     </label>
+                     <label class="checkbox-inline">
+                        <input class="veggie" type="checkbox" value="Mushrooms"> Mushrooms
+                     </label>
+                     <label class="checkbox-inline">
+                        <input class="veggie" type="checkbox" value="Spinach"> Baby Spinach
+                     </label>
+                     <label class="checkbox-inline">
+                        <input class="veggie" type="checkbox" value="Jalape&ntilde;o"> Jalape&ntilde;os
+                     </label>
+                     <label class="checkbox-inline">
+                        <input class="veggie" type="checkbox" value="Pineapple"> Pineapple
+                     </label>
+                  </div>
+                  <hr>
+               </div>
+               <div class="col-sm-6 pull-right">
+                  <button class="btn btn-default" id="addToOrder" onClick="getTotal();">Add to Order</button>
+                  <button type="reset" class="btn btn-default" onClick="window.location.reload();">Reset</button>
+               </div>
+            </div>
+         </main>
+         <aside class="col-xs-12 col-sm-3 col-sm-offset-1">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h3 id="order">Order Info</h3>
+                     <table class="table-condensed pull-right">
+                        <tr class="pizzaItem">
+                           <td class="col-sm-2" id="pizzaSize">Pizza Size </td>
+                           <td class="col-sm-1" id="basePrice">$0.00</td>
+                        </tr>
+                        <tr class="itemChoices">
+                           <td class="col-sm-2"
+                           id="pizzaCrust">Crust</td>
+                           <td class="col-sm-1" id="crustTotal">$0.00</td>
+                        </tr>
+                        <tr class="itemChoices">
+                           <td class="col-sm-2" id="pizzaSauce">Sauce</td>
+                           <td class="col-sm-1">included</td>
+                        </tr>
+                        <tr class="itemChoices">
+                           <td class="col-sm-2" id="pizzaCheese">Cheese</td>
+                           <td class="col-sm-1" id="cheeseTotal">$0.00</td>
+                        </tr>
+                        <tr class="itemChoices">
+                           <td class="col-sm-2" id="pizzaMeat">Meats</td>
+                           <td class="col-sm-1" id="meatTotal">$0.00</td>
+                        </tr>
+                        <tr class="itemChoices">
+                           <td class="col-sm-2" id="pizzaVeggie">Veggies</td>
+                           <td class="col-sm-1" id="veggieTotal">$0.00</td>
+                        </tr>
+                        <tr class="pizzaItem">
+                           <td class="col-sm-2 text-right">Total: </td>
+                           <td class="col-sm-1" id="subTotal">$0.00</td>
+                        </tr>
+                        <!--
+                        <tr>
+                           <td class="col-md-2 col-sm-1 text-right">Add a tip?&ensp;<i class="fa fa-refresh" aria-hidden="true" onclick="getTotal();"></i></td>
+                           <td class="col-md-1 col-sm-2"><label class="sr-only" for="inputTip">Tip amount</label>
+                           <input type="tip" class="form-control" id="tipTotal" placeholder="$0.00"></td>
+                        </tr>
+                        <tr>
+                           <td class="col-md-2 col-sm-1 text-right">Total: </td>
+                           <td class="col-md-1 col-sm-2" id="total">$0.00</td>
+                        </tr>
+                        -->
+                     </table>
+                  <hr>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-12">
+                  <h3 id="delivery">Delivery Info</h3>
+                  <form>
+                     <div class="form-group">
+                        <label class="sr-only" for="inputName">Name</label>
+                        <input type="name" class="form-control" id="inputName" placeholder="Name">
+                     </div>
+                     <div class="form-group">
+                        <label class="sr-only" for="inputAddress">Address</label>
+                        <input type="address" class="form-control" id="inputAddress" placeholder="Address">
+                     </div>
+                     <div class="form-group">
+                        <label class="sr-only" for="inputEmail">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                     </div>
+                     <div class="form-group">
+                        <label class="sr-only" for="inputPhone">Phone number</label>
+                        <input type="phone" class="form-control" id="inputPhone" placeholder="Phone">
+                     </div>
+                  </form>
+                  <hr>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-12">
+                  <h3 id="payment">Payment Info</h3>
+                  <div class="text-center">
+                     <label class="radio-inline payment">
+                        <input type="radio" name="inlineCardType" id="visa" value="visa" checked> Visa
+                     </label>
+                     <label class="radio-inline payment">
+                        <input type="radio" name="inlineCardType" id="masterCard" value="masterCard"> MasterCard
+                     </label>
+                     <label class="radio-inline payment">
+                        <input type="radio" name="inlineCardType" id="amex" value="amex"> AmericanExpress
+                     </label>
+                     <p class="note">*no cash &ndash; drones can't make change</p>
+                  </div>
+                  <form>
+                     <div class="form-group">
+                        <label class="sr-only" for="inputCardNo">Credit Card Number</label>
+                        <input type="cardNo" class="form-control" id="inputCardNo" placeholder="Card No">
+                     </div>
+                     <div class="form-group">
+                        <label class="sr-only" for="inputExpiration">Expiration Date</label>
+                        <input type="expiration" class="form-control" id="inputExpiration" placeholder="mm / yyyy">
+                     </div>
+                     <div class="form-group">
+                        <label class="sr-only" for="inputSecurity">Security Code</label>
+                        <input type="security" class="form-control" id="inputSecurity" placeholder="CVV">
+                     </div>
+                  </form>
+                  <hr>
+                  <p class="note">This is just a sample project. Don't really enter your credit-card information...</p>
+               </div>
+            </div>
+            <div class="row pull-right">
+               <button class="btn btn-default">CHECKOUT</button>
+            </div>
+         </aside>
+      </div>
+   </div>
+
+   <footer>
+      <div class="container">
+   		<div class="row">
+   			<div class="col-sm-9 col-xs-10">
+   				<p>Project content defined by The Tech Academy.&ensp; All other content by Annie Bowman &copy; 2017</p>
+   			</div>
+   			<div class="col-sm-3 col-xs-2">
+               <h3 class="pull-right">AB</h3>
+   			</div>
+   		</div>
+   	</div>
+   </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./js/pizza-script.js"></script>
+</body>
+</html>
