@@ -184,8 +184,13 @@ nav a {
   -moz-box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3); }
-  #intro-strip h1 {
+  #intro-strip h2 {
     color: #fff; }
+  #intro-strip p {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: right; }
 
 #home {
   padding-top: 80px;
@@ -271,8 +276,7 @@ nav a {
     color: #fff;
     font-size: 26px;
     font-weight: bold;
-    text-align: right;
- }
+    text-align: right; }
 
 /* ============================= SKILLS SECTION ============================= */
 #skills {
