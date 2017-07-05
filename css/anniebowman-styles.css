@@ -245,6 +245,9 @@ nav a {
     margin: 0 auto;
     max-width: 800px;
     max-height: 400px; }
+  .carousel .carousel-inner > .item > .btn-wrp {
+     margin-top: 30px;
+ }
   .carousel .container p, .carousel .container h1, .carousel .container h2 {
     max-width: 800px;
     margin: 20px auto; }
