@@ -1,4 +1,2 @@
 # anniebowman
-My personal portfolio site!
-
-please also visit http://www.anniebowman.com
+My legacy personal portfolio site (new one under construction)
