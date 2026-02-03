@@ -1,497 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio webpage for Annie Bowman">
-    <meta name="author" content="Annie Bowman">
-    <link rel="shortcut icon" href="./ico/abicon.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>AnnieBowman.com</title>
+    <title>Annie Bowman — Portfolio Under Redesign</title>
 
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-	 <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+    <meta
+      name="description"
+      content="Annie Bowman — Software Engineer. Portfolio currently undergoing a complete redesign."
+    />
+    <meta name="author" content="Annie Bowman" />
 
-   <link href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt" rel="stylesheet">
+    <link rel="icon" href="./ico/abicon.png" />
 
-	 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+      :root {
+        --bg-start: #5b3fc4;
+        --bg-end: #9b7ae6;
+        --text-primary: #ffffff;
+        --text-secondary: rgba(255, 255, 255, 0.85);
+      }
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+      * {
+        box-sizing: border-box;
+      }
 
-    <!-- Custom styles for this template -->
-    <link href="css/anniebowman-styles.css" rel="stylesheet">
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, sans-serif;
+        color: var(--text-primary);
+      }
 
+      body {
+        background: linear-gradient(
+          135deg,
+          var(--bg-start),
+          var(--bg-end)
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="bootstrap/assets/js/html5shiv.js"></script>
-      <script src="bootstrap/assets/js/respond.min.js"></script>
-    <![endif]-->
+      main {
+        max-width: 720px;
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 2.25rem;
+        margin-bottom: 0.75rem;
+        letter-spacing: 0.02em;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+        margin-bottom: 2rem;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+        margin-bottom: 2rem;
+      }
+
+      .links {
+        display: flex;
+        gap: 1.25rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .links a {
+        color: var(--text-primary);
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.6rem 1.25rem;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        transition: all 0.2s ease;
+      }
+
+      .links a:hover,
+      .links a:focus-visible {
+        background: rgba(255, 255, 255, 0.15);
+        outline: none;
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+    </style>
   </head>
 
-  <body data-spy="scroll" data-target="#navigation">
+  <body>
+    <main>
+      <img
+        src="./images/site-redesign.png"
+        alt="Illustration showing a website under reconstruction"
+      />
 
-	<div id="content">
+      <h1>Portfolio Under Redesign</h1>
 
-	<header>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-10 col-xs-9">
-				<h1 id="logo">Annie Bowman</h1>
-			</div><!-- end 2 -->
-			<div class="col-sm-2 col-xs-3 visible-sm text-right visible-xs">
-				<a href="#" title="nav" class="mini-nav"><i class="fa fa-reorder"></i></a>
-			</div>
+      <p>
+        I’m currently rebuilding my personal site with updated work and
+        experience.  
+        A new portfolio will be live soon.
+      </p>
 
-			<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-1 col-sm-12 col-xs-12">
-				<nav id="navigation">
-						<ul class="nav">
-							<li class="active"><a href="#main" title="Home">Home</a></li>
-                     <li><a href="#home" title="About">About</a></li>
-							<li><a href="#projects" title="Projects">Work</a></li>
-							<li><a href="#skills" title="Skills">Skills</a></li>
-							<li><a href="#contact" title="Contact">Contact</a></li>
-							<li><a href="#links" title="Links">Links</a></li>
-						</ul>
-				</nav>
-			</div><!-- end 12 -->
-		</div><!-- end row -->
-	</div><!-- end container -->
-	</header>
-
-	<!-- mainImage -->
- 	<div id="main">
- 		<div class="container">
- 			<div class="row">
-				<div class="col-lg-7 col-lg-offset-5 col-md-8 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-12">
-					<div class="cont-wrapper">
-						<p class="intro">- Full-Stack Developer - <br> Skills: HTML5, CSS3, JavaScript, jQuery, AngularJS, D3js, SQL, Python, C#, ASP.NET Core MVC</p>
-						<p class="btn-wrp"><a href="#contact" class="c2a-button">Contact Me</a></p>
-					</div><!-- end cont wrapper -->
-				</div><!-- end 8 -->
- 			</div>
- 		</div><!-- end container -->
-	</div><!-- end row -->
-
-	<!-- intro strip -->
-	<div id="intro-strip">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-               <h2>When you come to a fork in the road, take it.</h2>
-               <p>Yogi Berra</p>
-            </div>
-			</div><!-- end row -->
-		</div><!-- end container -->
-	</div><!-- end intro strip -->
-
-<div id="home">
-	<div class="container">
-	<div class="row">
-		<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12  text">
-			<h2>A little about me</h2>
-			<p>Currently I am pursuing a career in Software and Web Development after completing The Tech Academy's remote Software Development program. I plan on making Seattle my base of operations to move forward in the field. I'm comfortable with the basics of computer technology and front-end web development including HTML5/CSS3, JavaScript, jQuery, AngularJS and D3js. I also have experience in Python, SQL, C# and the ASP.NET Framework including MVC and EF. <br> I have 10 years experience in Customer Account Management and Pricing in the Footwear industry, as well as a BS in Psychology from WSU. I also love to knit, play the ukulele and lift really heavy weights.</p>
-			<p><strong>I'm highly detail oriented, exceptionally organized, and really fun to work with!</strong></p>
-			<p class="btn-wrp"><a href="#contact" class="c2a-button">Get in Touch</a></p>
-		</div>
-		<div class="col-lg-5 col-md-5 col-sm-5 ipad hidden-xs">
-			<img src="./images/champ.jpeg" class="img-responsive" alt="Me with a big trophy" />
-		</div>
-
-	</div><!-- end row -->
-	</div><!-- end container -->
-</div><!-- end home -->
-
-<!-- ============================= CAROUSEL ================================ -->
-
-<div id="projects">
-    <div id="myCarousel" class="carousel slide">
-    <div class="container">
-    	<div class="row">
-    		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
-        <li data-target="#myCarousel" data-slide-to="6"></li>
-        <li data-target="#myCarousel" data-slide-to="7"></li>
-        <li data-target="#myCarousel" data-slide-to="8"></li>
-        <li data-target="#myCarousel" data-slide-to="9"></li>
-        <li data-target="#myCarousel" data-slide-to="10"></li>
-        <li data-target="#myCarousel" data-slide-to="11"></li>
-        <li data-target="#myCarousel" data-slide-to="12"></li>
-      </ol>
-
-      <div class="carousel-inner">
-
-      <!-- item -->
-      <div class="item active">
-         <!-- edit contents here -->
-         <div class="container">
-            <h1>Global Obesity Viz</h1>
-            <div class="caption">
-               <p>A fun data visualization created for UW's Institute of Health Metrics and Evaluation during the interview process.</p>
-            </div>
-         </div>
-         <img src="./images/ObesityViz.png" alt="screenshot of Obesity Visualization" class="img-responsive" >
-         <p class="btn-wrp"><a href="https://abvolatile.github.io/ObesityViz/" target="_blank" class="c2a-button">Check it out</a></p>
-               <!-- stop editing here -->
+      <div class="links">
+        <a
+          href="https://www.linkedin.com/in/abvolatile"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/abvolatile"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a href="mailto:abvolatile@gmail.com">Email</a>
       </div>
-      <!-- end item -->
 
-      <!-- item -->
-      <div class="item">
-         <!-- edit contents here -->
-         <div class="container">
-            <h1>Just Dog Stuff Shop</h1>
-            <div class="caption">
-               <p>A fun and simple ecommerce sample website built using ASP.NET Core MVC. </p>
-            </div>
-         </div>
-         <img src="./images/justdogstuffshop.png" alt="screenshot of Just Dog Stuff Shop home page" class="img-responsive" >
-         <p class="btn-wrp"><a href="http://justdogstuffshop.azurewebsites.net" target="_blank" class="c2a-button">Check it out</a></p>
-               <!-- stop editing here -->
-      </div>
-      <!-- end item -->
-
-      <!-- item -->
-      <div class="item">
-         <!-- edit contents here -->
-         <div class="container">
-            <h1>Suburbanites</h1>
-            <div class="caption">
-               <p>Website for an Eastern-WA based ladies' fundraising group, created with AngularJS. </p>
-            </div>
-         </div>
-         <img src="./images/suburbanites.png" alt="screenshot of suburbanites landing page" class="img-responsive" >
-         <p class="btn-wrp"><a href="https://suburbanites17.firebaseapp.com/" target="_blank" class="c2a-button">Check it out</a></p>
-               <!-- stop editing here -->
-      </div>
-      <!-- end item -->
-
-      <!-- item -->
-      <div class="item">
-         <!-- edit contents here -->
-         <div class="container">
-            <h1>Sage Stone Botanicals</h1>
-            <div class="caption">
-               <p>Ongoing Front-End UI contributions that I do for an awesome organic skin-care company. </p>
-            </div>
-         </div>
-         <img src="./images/sagestone.png" alt="screenshot of sagestonebotanicals.com landing page" class="img-responsive" >
-         <p class="btn-wrp"><a href="http://www.sagestonebotanicals.com/" target="_blank" class="c2a-button">Check it out</a></p>
-               <!-- stop editing here -->
-      </div>
-      <!-- end item -->
-
-      <!-- item -->
-      <div class="item">
-         <!-- edit contents here -->
-         <div class="container">
-            <h1>JobPDX.com</h1>
-            <div class="caption">
-               <p>A job search website for Portland, OR tech companies that I contributed to during my internship with Prosper I.T. Consulting. </p>
-            </div>
-         </div>
-         <img src="./images/JobPDX.png" alt="screenshot of JobPDX.com landing page" class="img-responsive" >
-         <p class="btn-wrp"><a href="https://jobpdx.com/" target="_blank" class="c2a-button">Check it out</a></p>
-               <!-- stop editing here -->
-      </div>
-      <!-- end item -->
-
-      <!-- item -->
-      <div class="item">
-         <!-- edit contents here -->
-         <div class="container">
-            <h1>Weather App</h1>
-            <div class="caption">
-               <p>A simple application to get the current temperature (in either &ordm;C or &ordm;F) and weather description at your location.</p>
-            </div>
-         </div>
-         <img src="./images/weatherApp.PNG" alt="screenshot of CodePen weather application" class="img-responsive" >
-         <p class="btn-wrp"><a href="https://codepen.io/abvolatile/full/Moedxe/" target="_blank" class="c2a-button">Check it out</a></p>
-               <!-- stop editing here -->
-      </div>
-      <!-- end item -->
-
-      <!-- item -->
-      <div class="item">
-         <!-- edit contents here -->
-         <div class="container">
-            <h1>Lunch Program</h1>
-            <div class="caption">
-               <p>A fictitious school's web application to let parents log in and choose lunch plans for their child. Written in C# using ASP.NET MVC</p>
-            </div>
-         </div>
-         <img src="./images/LunchPlanHome.PNG" alt="screenshot of final C# project" class="img-responsive" >
-         <p class="btn-wrp"><a href="https://schoollunchplan.azurewebsites.net/" target="_blank" class="c2a-button">Check it out</a></p>
-               <!-- stop editing here -->
-      </div>
-      <!-- end item -->
-
-      <!-- item -->
-      <div class="item">
-         <!-- edit contents here -->
-         <div class="container">
-            <h1>File Mover GUI</h1>
-            <div class="caption">
-               <p>A program with a GUI written in Python that moves files from one folder to another depending on time of last transfer.</p>
-            </div>
-         </div>
-         <img src="./images/python-filemover.png" alt="screenshot of final python project GUI" class="img-responsive" >
-         <p class="btn-wrp"><a href="https://github.com/abvolatile/FileTransfer_Drill/blob/master/PythonDrill-filemoveDB.py" target="_blank" class="c2a-button">Check it out</a></p>
-               <!-- stop editing here -->
-      </div>
-      <!-- end item -->
-
-      <!-- item -->
-      <div class="item">
-         <!-- edit contents here -->
-         <div class="container">
-            <h1>Pizza Order Page</h1>
-            <div class="caption">
-               <p>An order page for a fictional drone-based pizza delivery service made for a Tech Academy final JavaScript project.</p>
-            </div>
-         </div>
-         <img src="./images/pizza.png" alt="screenshot of final pizza project page" class="img-responsive" >
-         <p class="btn-wrp"><a href="pizza-index.html" target="_blank" class="c2a-button">Check it out</a></p>
-               <!-- stop editing here -->
-      </div>
-      <!-- end item -->
-
-      <!-- item -->
-      <div class="item">
-         <!-- edit contents here -->
-         <div class="container">
-            <h1>SQL Library DB</h1>
-            <div class="caption">
-               <p>A sample Library database with SQL Server queries made for a Tech Academy drill.</p>
-            </div>
-         </div>
-         <img src="./images/library-drill.png" alt="screenshot of library drill query" class="img-responsive" >
-         <p class="btn-wrp"><a href="https://github.com/abvolatile/LibraryDrill" target="_blank" class="c2a-button">Check it out</a></p>
-               <!-- stop editing here -->
-      </div>
-      <!-- end item -->
-
-      <!-- item -->
-      <div class="item">
-      <!-- edit contents here -->
-         <div class="container">
-            <h1>Trump Quotes</h1>
-            <div class="caption">
-               <p>A fun random quote generator with actual real quotes from our new president!</p>
-            </div>
-         </div>
-         <img src="./images/trump-quotes.png" alt="screenshot of my Trump Quotes project" class="img-responsive" >
-         <p class="btn-wrp"><a href="trump_quotes.html" target="_blank" class="c2a-button">Check it out</a></p>
-            <!-- stop editing here -->
-      </div>
-      <!-- end item -->
-
-      <!-- item -->
-		<div class="item">
-		<!-- edit contents here -->
-			<div class="container">
-				<h1>Tribute Page</h1>
-				<div class="caption">
-				   <p>A simple tribute page for my mom.</p>
-				</div>
-			</div>
-			<img src="./images/tribute.png" alt="screenshot of tribute page" class="img-responsive" >
-			<p class="btn-wrp"><a href="tribute.html" target="_blank" class="c2a-button">Check it out</a></p>
-				<!-- stop editing here -->
-		</div>
-	   <!-- end item -->
-
-		<!-- item -->
-		<!-- <div class="item"> -->
-		<!-- edit contents here -->
-			<!-- <div class="container">
-				<h1>Travel Site</h1>
-				<div class="caption">
-				   <p>Alternate-reality travel agency site made during an HTML and CSS tutorial for the Tech Academy.</p>
-				</div>
-			</div>
-			<img src="./images/travel-site.png" alt="screenshot of my travel site project" class="img-responsive" >
-			<p class="btn-wrp"><a href="travel_site.html" target="_blank" class="c2a-button">Check it out</a></p> -->
-				<!-- stop editing here -->
-		<!-- </div> -->
-	   <!-- end item -->
-
-	   <!-- item -->
-		<div class="item">
-		<!-- edit contents here -->
-			<div class="container">
-				<h1>Coming Soon</h1>
-				<div class="caption">
-				   <p>New projects are underway and will be added ASAP!</p>
-				</div>
-			</div>
-			<img src="./images/work-underway.jpeg" alt="Construction logo" class="img-responsive" >
-			<p class="btn-wrp"><a class="c2a-button">not ready yet!</a></p>
-				<!-- stop editing here -->
-		</div>
-	   <!-- end item -->
-
-      </div><!-- end carousel inner -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-		</div>
-    	</div>
-    </div>
-    </div><!-- end carousel -->
-</div><!-- end work -->
-
-	<!-- ================ PARALLAX BACKGROUND STRIP ========================= -->
-
-	<div id="parallax" data-speed="8" class="hidden-sm hidden-xs">
-		<div class="container">
-	 		 <div class="row">
-	 		 	<div class="col-lg-8 col-lg-offset-2">
-			 		<h2>You can never be overdressed or overeducated.</h2>
-               <p>Oscar Wilde</p>
-	 		 	</div>
-	 		 </div>
-		 </div>
-	</div>
-
-<!-- ========================= SIGN UP STRIP =============================== -->
-<!--
-<div id="signup">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<h3>Sign up for the newsletter</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
-
-				<div class="row">
-						<form>
-							<div class="col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-9   col-xs-12">
-								<input type="email" class="form-control"  placeholder="Enter email">
-							</div>
-							<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12"><button type="submit" class="btn btn-db">Sign up now!</button></div>
-						</form>
-				</div>
-			</div>
-		</div>--> <!-- end row -->
-
-<!--</div>--><!-- end container -->
-<!--</div>--><!-- end signup -->
-
-<!-- ============================== CONTACT ================================ -->
-
-<div id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-					<h2 class="">Contact Me</h2>
-					<p>Want to get in touch? <!--<br> Use the form below to send an email with your name and any comments or questions you'd like to ask! </p>
-					<form method="post" action="mailto:abvolatile@gmail.com" enctype="text/plain">
-						<p><input class="form-control" placeholder="Name"></p>
-						<p><input class="form-control" placeholder="Subject" type="text" name="Subject"></p>
-						<p><textarea class="form-control" rows="4" placeholder="Comments or questions"></textarea></p>
-						<p><button type="submit" name="Submit" class="btn btn-db" value="Submit">SEND</button></p>
-					</form>
-               <p>or if you're not into the whole form thing, that's cool - I get it.  You can reach me here: --><a href="mailto:abvolatile@gmail.com" target="blank" id="myemail">abvolatile@gmail.com</a></p>
-				</div>
-			</div><!-- end row -->
-		</div><!-- end container -->
-</div><!-- end contact -->
-
-
-<!-- =============================== LINKS ================================= -->
-<div id="links">
-<div class="container">
-
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12">
-				<h2>Check Me Out!</h2>
-		</div>
-	</div><!-- end row -->
-
-	<div class="row">
-		<div class="col-lg-4 col-md-4 col-sm-4 post">
-         <h3><i class="fa fa-linkedin-square"aria-hidden="true"></i> LinkedIn</h3>
-         <p>View my network and connect with me on LinkedIn to find my extended resume and qualifications!</p>
-         <div class="post-pic">
-            <a href="https://www.linkedin.com/in/abvolatile" target="_blank"><img src="./images/linkedin.jpg" class="img-responsive"  alt="photo of linkedin profile"></a>
-         </div>
-
-					<!--<p class="sn-links">
-						<a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
-						<a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
-						<a href="#" title="linked-in"><i class="fa fa-linkedin-square"></i></a>
-					</p>-->
-		</div>
-		<div class="col-lg-4 col-md-4 col-sm-4 post">
-         <h3><i class="fa fa-github" aria-hidden="true"></i> GitHub</h3>
-			<p>Take a look at some of the projects I worked on as a student of the Tech Academy!</p>
-			<div class="post-pic">
-				<a href="https://github.com/abvolatile" target="_blank"><img src="./images/github.png" class="img-responsive"  alt="photo of github profile"></a>
-			</div>
-
-					<!--<p class="sn-links">
-						<a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
-						<a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
-						<a href="#" title="linked-in"><i class="fa fa-linkedin-square"></i></a>
-					</p>-->
-		</div>
-		<div class="col-lg-4 col-md-4 col-sm-4 post">
-			<h3><i class="fa fa-sun-o" aria-hidden="true"></i> Fun Stuff</h3>
-			<p>I have many other interests and hobbies as well! Find out about them here. (PAGE COMING SOON!)</p>
-			<div class="post-pic">
-				<a href="#" target="_blank"><img src="./images/deadlift.jpg" class="img-responsive"  alt="photo of deadlift competition"></a>
-			</div>
-
-				<!--<p class="sn-links">
-						<a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
-						<a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
-						<a href="#" title="linked-in"><i class="fa fa-linkedin-square"></i></a>
-					</p>-->
-		</div>
-	</div><!-- end row -->
-</div><!-- end container -->
-</div><!-- end blog -->
-
-
-<!-- ============================== FOOTER ================================= -->
-
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
-				<p>Template provided by Beachstrap 2013. All modifications and content by anniebowman.com &copy; 2017</p>
-			</div>
-			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
-            <h4 class="pull-right">AB</h4>
-            <!--<p class="sn-links"><a href="#" title="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
-				<a href="#" title="linked-in"><i class="fa fa-linkedin-square"></i></a></p>-->
-			</div>
-		</div>
-	</div>
-</footer>
-
-</div><!-- end content -->
-
-<!-- =========================== scripts =================================== -->
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-
-    <script src="bootstrap/assets/js/jquery.js"></script>
-	 <script src="js/waypoints.min.js"></script>
-	 <script src="js/beachstrap-script.js"></script>
-	 <script src="js/jquery.nav.js"></script>
-	 <script src="js/jquery.scrollTo.js"></script>
-
-	 <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-	 <script src="bootstrap/assets/js/holder.js"></script>
-
-
+      <footer>
+        © Annie Bowman
+      </footer>
+    </main>
   </body>
 </html>
