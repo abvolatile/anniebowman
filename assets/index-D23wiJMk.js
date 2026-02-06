@@ -354,7 +354,7 @@ Error generating stack: `+a.message+`
   margin: 0;
   font-size: ${({theme:i})=>i.tokens.fontSize.sm}px;
   color: ${({theme:i})=>i.colors.onSurface};
-`,Lv="/assets/resume-C-5nW4qq.pdf",Ah=B.button`
+`,Lv="/assets/resume-BNiv20u_.pdf",Ah=B.button`
   display: inline-flex;
   align-items: center;
   justify-content: center;
